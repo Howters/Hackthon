@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+:root{
+    --gold:rgba(255, 178, 108, 1);
+    --white:rgba(255, 255, 255, 1);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(assets/shortbg.jpg);
+    background-size: cover;                     
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    padding: 0 4.5rem;
+    
+}
+
+#navbar .container {
+    padding-block: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.nav-menu {
+    text-align: center;
+    padding-right: 100px;
+    padding-top: 15px;
+}
+
+#navbar .container img {
+    width: 175px;
+    height: 65px;
+    padding-top: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.nav-menu ul li {
+    display: inline;
+    padding-inline: 50px;
+    list-style: none;
+    font-size: 19px;
+    color: white;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+}
+
+.nav-menu ul li:hover {
+    color: var(--gold);
+}
+
+
+#navbar .container p {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 19px;
+    color: white;
+    padding-top: 5px;
+    font-family: 'Jost', sans-serif;
+}
+
+#navbar .container p:hover {
+    color: var(--gold);
+}
+
+a#db {
+    text-decoration: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+#payment-confirmation h2 {
+    font-size: 65px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #FFB26C 0%, #916463 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    padding-bottom: 3.5rem;
+}
+
+#payment-confirmation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 9.5rem;
+    margin-bottom: 200px;
+}
+
+.search {
+    justify-content: center;
+    width: 80%;
+    height: 500px;
+    background: #3E333C;
+    padding-top: 2.5rem;
+    border-radius: 30px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: left;
+    padding: 0.8rem 0 0.5rem 2.0rem;
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    position: relative;
+    left: 415px;
+    margin-top: 55px;
+    align-items: center;
+    border-radius: 28.5px;
+    gap: 120px;
+    
+}
+
+::placeholder {
+    font-size: 1.0rem;
+    color: grey;
+
+
+  }
+
+.search-bar > input[type="text"] {
+    height: 35px;
+    border: none;
+    outline: none;
+    font-size: 1.0rem;
+   
+}
+
+
+
+.search-bar > i {
+    font-size: 17px;
+}
+
+.verify {
+    display: flex;
+    justify-content: left;
+    margin: 0 4.2rem;
+    gap: 2.5rem;
+    margin-top: 6.5rem;
+
+}
+
+.verify input[type="text"]  {
+    font-size: 20px;
+    font-weight: normal;
+    width: 235px;
+    height: 55px;
+    border-radius: 28px;
+    background-color: #6C555C;
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+   
+}
+
+.input label {
+    color: var(--gold);
+    padding-left: 1.0rem;
+    font-size: 20px;
+    padding-bottom: 0.5rem;
+    font-family: 'Jost', sans-serif;
+}
+
+#btn {
+    width: 110px;
+    height: 60px;
+    border-radius: 65.9558px;
+    background: #60434C;
+    border: 1.13717px solid #6C555C;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    margin-top: 40px;
+    position: relative;
+    left: -15px;
+}
+
+#btn:hover {
+    background: #4c3a40;
+}
+
+#btn1 {
+    width: 110px;
+    height: 60px;
+    border-radius: 65.9558px;
+    background: #60434C;
+    border: 1.13717px solid #6C555C;
+    color: white;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    margin-top: 40px;
+    
+    
+}
+
+#btn1:hover {
+    background: #4c3a40;
+}
+
+
+footer {
+    background:#4E3F4B;;
+    width: 100%;
+    height: 220px;
+    margin-top: auto;
+    flex-grow: 1;
+    padding: 0 2.5rem;
+
+}
+
+.socmed-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+    gap: 2.0rem;
+    margin-left: 2.0rem;
+}
+
+.socmed-icon i {
+    font-size: 35px;
+    color: var(--white);
+}
+
+.socmed-icon i:hover {
+    color: rgb(208, 205, 205);
+}
+
+footer .socmed p {
+    font-size: 25px;
+    color: var(--white);
+    text-align: center;
+    margin-left: 2.0rem;
+}
+
+.socmed {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    
+}
+
+footer .copyright p {
+    font-size: 15px;
+    color: var(--white);
+
+    font-family: 'Jost', sans-serif;
+
+}
+
+footer .copyright a> p {
+    font-size: 15px;
+    color: var(--gold);
+    text-decoration: aqua;
+    font-family: 'Jost', sans-serif;
+    text-decoration: underline var(--gold) 1px;
+
+}
+
+
+
+

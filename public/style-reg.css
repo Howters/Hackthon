@@ -1,0 +1,365 @@
+
+/* style html */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #232323;
+}
+
+.container{
+    padding: 4.25rem 4.25rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* heading */
+.container .heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+img{
+    position: absolute;
+    z-index: -1;
+}
+
+.container .heading h1{
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 108px;
+    background: linear-gradient(180deg, #FFB26C 0%, #915756 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* group-info */
+#group-info{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#group-info h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 46px;
+    color: #FFFFFF;
+    margin-bottom: 10vh;
+}
+
+#form-section #group-info .input-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+#group-info .input-group .input{
+    display: flex;
+    flex-direction: column;
+}
+
+#group-info .input-group .input label{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 39px;
+    color: #FFB26C;
+    margin-left: 3vh;
+}
+
+#group-info .input input{
+    width: 518px;
+    height: 74px;
+    left: 317px;
+    top: 500px;
+    background: #6C555C;
+    border: 0.869369px solid #2B2229;
+    box-shadow: 0px 3.47748px 3.47748px rgba(0, 0, 0, 0.25);
+    border-radius: 28px;
+}
+
+#group-info input[type='text']{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 39px;
+    color: #FFFFFF;
+    padding-left: 3vh;
+}
+
+#group-info input[type='password']{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 39px;
+    color: #FFFFFF;
+    padding-left: 3vh;
+}
+
+/* password validation */
+#pswd_info {
+    position:absolute;
+    margin-top: 1vh;
+    margin-right:15vh;
+    width:250px;
+    padding:15px;
+    background:#684952;
+    font-size:.875em;
+    border-radius:5px;
+    box-shadow:0 1px 3px #ccc;
+    border:none;
+}
+#pswd_info::before {
+    content: "\25B2";
+    position:absolute;
+    top:-12px;
+    left:45%;
+    font-size:14px;
+    line-height:14px;
+    color:#ddd;
+    text-shadow:none;
+    display:block;
+}
+
+#pswd_info {
+    display:none;
+}
+
+#pswd_confirm {
+    position:absolute;
+    margin-top: 1vh;
+    margin-left:7vh;
+    width:250px;
+    padding:15px;
+    background:#fefefe;
+    font-size:.875em;
+    border-radius:5px;
+    box-shadow:0 1px 3px #ccc;
+    border:1px solid #ddd;
+}
+
+#pswd_confirm::before {
+    content: "\25B2";
+    position:absolute;
+    top:-12px;
+    left:45%;
+    font-size:14px;
+    line-height:14px;
+    color:#ddd;
+    text-shadow:none;
+    display:block;
+}
+
+#pswd_confirm {
+    display:none;
+}
+
+#pswd_info h4{
+color: #FFFFFF;
+}
+
+
+.invalid {
+    padding-left:22px;
+    line-height:24px;
+    color: black;
+}
+.valid {
+    padding-left:22px;
+    line-height:24px;
+    color:rgba(152, 136, 141, 1);
+}
+
+ .popup{
+    color: red;
+ }
+
+#message{
+    margin-top: 5vh;
+    margin-left: 4vh;
+}
+
+.margin-left-validation{
+    margin-top: 2vh;
+    margin-left: 4vh;
+}
+
+#group-info .input-group .binusian{
+    accent-color: #463C44;
+    color: #FFB26C;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 39px;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+input[type="radio"] {
+    width: 38px;
+    height: 38px;
+    margin-right: -1.5rem;
+}
+
+/* leader-info */
+
+#leader-info{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#leader-info h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 46px;
+    color: #FFFFFF;
+    margin-bottom: 10vh;
+}
+
+#form-section #leader-info .input-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+#leader-info .input-group .input{
+    display: flex;
+    flex-direction: column;
+}
+
+#leader-info .input-group .input label{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 39px;
+    color: #FFB26C;
+    margin-left: 3vh;
+}
+#leader-info .input-group .input label span{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 19px;
+    color: #FFB26C;
+}
+
+#leader-info .input input{
+    width: 518px;
+    height: 74px;
+    left: 317px;
+    top: 500px;
+    background: #6C555C;
+    border: 0.869369px solid #2B2229;
+    box-shadow: 0px 3.47748px 3.47748px rgba(0, 0, 0, 0.25);
+    border-radius: 28px;
+}
+
+#leader-info input[type='text']{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 39px;
+    color: #FFFFFF;
+    padding-left: 3vh;
+}
+
+#leader-info input[type='email']{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 39px;
+    color: #FFFFFF;
+    padding-left: 3vh;
+}
+
+#leader-info input[type='date']{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 39px;
+    color: #FFFFFF;
+    padding-left: 3vh;
+}
+
+#leader-info input[type='tel']{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 39px;
+    color: #FFFFFF;
+    padding-left: 3vh;
+}
+
+#leader-info input[type='file']{
+padding-left: 3vh;
+padding-top: 3.5vh;
+font-family: 'Jost';
+}
+
+button{
+    padding: 3vh 5vh 3vh 5vh;
+    margin-top: 10vh;
+    background-color: #60434C;
+    border: 1.13717px solid #6C555C;
+    box-shadow: 0px 4.54867px 4.54867px rgba(0, 0, 0, 0.25);
+    border-radius: 65.9558px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20.7035px;
+    line-height: 44px;
+    color: #FFB26C;
+    text-shadow: 0px 5.23215px 5.23215px rgba(0, 0, 0, 0.25);
+    transition: 0.5s;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color:#6C555C ;
+}

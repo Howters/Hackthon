@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+:root{
+    --gold:rgba(255, 178, 108, 1);
+    --white:rgba(255, 255, 255, 1);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(assets/shortbg.jpg);
+    background-size: cover;                     
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    padding: 0 4.5rem;
+    
+}
+
+#navbar .container {
+    padding-block: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.nav-menu {
+    text-align: center;
+    padding-right: 100px;
+    padding-top: 15px;
+}
+
+#navbar .container img {
+    width: 175px;
+    height: 65px;
+    padding-top: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.nav-menu ul li {
+    display: inline;
+    padding-inline: 50px;
+    list-style: none;
+    font-size: 19px;
+    color: white;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+}
+
+.nav-menu ul li:hover {
+    color: var(--gold);
+}
+
+
+#navbar .container p {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 19px;
+    color: white;
+    padding-top: 5px;
+    font-family: 'Jost', sans-serif;
+}
+
+#navbar .container p:hover {
+    color: var(--gold);
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+#timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 125px;
+    margin-bottom: 300px;
+}
+
+
+#timeline h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    
+    background: linear-gradient(180deg, #FFB26C 0%, #916463 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    width: 760px;
+    font-style: italic;
+    font-size: 75px;
+    text-align: center;
+    
+}
+
+#timeline p {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+ 
+   
+}
+
+.timeline {
+    display: flex;
+    justify-content: center;
+    
+    
+    
+}
+
+#timeline img {
+    margin-top: 2.5rem;
+    width: 75%;
+    
+    
+}
+
+
+p#desc {
+    font-size: 20px;
+    width: 220px;
+    height: 100px;
+    text-align: center;
+    
+    
+}
+
+#timeline img.img-content {
+    width: 220px;
+    height: 90px;
+}
+
+.timeline-content {
+    
+    margin-top: 0.5rem;
+    margin-left: 5.5rem;
+}
+
+
+button {
+     
+    background-color: #321E2A;
+    color: var(--white);
+    padding: 1.0rem 5rem;
+    font-size: 25px;
+    border-radius: 103px;
+    position: relative;
+    left: -1.0rem;
+    top: -3.5rem;
+}
+
+footer {
+    background:#4E3F4B;;
+    width: 100%;
+    height: 220px;
+    margin-top: auto;
+    flex-grow: 1;
+    padding: 0 2.5rem;
+
+}
+
+.socmed-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+    gap: 2.0rem;
+    margin-left: 2.0rem;
+}
+
+.socmed-icon i {
+    font-size: 35px;
+    color: var(--white);
+}
+
+.socmed-icon i:hover {
+    color: rgb(208, 205, 205);
+}
+
+footer .socmed p {
+    font-size: 25px;
+    color: var(--white);
+    text-align: center;
+    margin-left: 2.0rem;
+}
+
+.socmed {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    
+}
+
+footer .copyright p {
+    font-size: 15px;
+    color: var(--white);
+
+    font-family: 'Jost', sans-serif;
+
+}
+
+footer .copyright a> p {
+    font-size: 15px;
+    color: var(--gold);
+    text-decoration: aqua;
+    font-family: 'Jost', sans-serif;
+    text-decoration: underline var(--gold) 1px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

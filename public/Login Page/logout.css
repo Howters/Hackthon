@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+:root{
+    --gold:rgba(255, 178, 108, 1);
+    --white:rgba(255, 255, 255, 1);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(assets/shortbg.jpg);
+    background-size: cover;                     
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    padding: 0 4.5rem;
+    
+}
+
+#navbar .container {
+    padding-block: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.nav-menu {
+    text-align: center;
+    padding-right: 100px;
+    padding-top: 15px;
+}
+
+#navbar .container img {
+    width: 175px;
+    height: 65px;
+    padding-top: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.nav-menu ul li {
+    display: inline;
+    padding-inline: 50px;
+    list-style: none;
+    font-size: 19px;
+    color: white;
+    align-items: center;
+    font-family: 'Jost', sans-serif;
+}
+
+.nav-menu ul li:hover {
+    color: var(--gold);
+}
+
+
+#navbar .container p {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 19px;
+    color: white;
+    padding-top: 5px;
+    font-family: 'Jost', sans-serif;
+}
+
+#navbar .container p:hover {
+    color: var(--gold);
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+#container {
+    padding: 2.0rem 42.5rem;
+    margin-bottom: 300px;
+}
+
+img {
+    width: 575.2px;
+    height: 550px;
+}
+
+.title p  {
+    color: var(--gold);
+    font-size: 75px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    width: 800px;
+    
+}
+
+
+.title p span {
+    color: #CEAEAD;
+}
+
+.button1 {
+   text-align: center;
+   padding-top: 2.5rem; 
+  
+}
+
+.button2 {
+    text-align: center;
+    padding-top: 2.0rem; 
+   
+ }
+
+button {
+    border-radius: 40px;
+    width: 250px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    background-image:  linear-gradient(180deg, rgba(255, 178, 108, 0.78) 0%, rgba(255, 134, 131, 0.53) 99.48%);;
+    border: none;
+    color: rgb(57, 54, 54);
+    
+}
+
+
+.button2 button {
+    background-color: #4E3F4B;
+    background-image: none;
+    color: white;
+}
+
+button:hover {
+    width: 400px;
+    height: 70px;
+}
+
+
+footer {
+    background:#4E3F4B;;
+    width: 100%;
+    height: 220px;
+    margin-top: auto;
+    flex-grow: 1;
+    padding: 0 2.5rem;
+
+}
+
+.socmed-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+    gap: 2.0rem;
+    margin-left: 2.0rem;
+}
+
+.socmed-icon i {
+    font-size: 35px;
+    color: var(--white);
+}
+
+.socmed-icon i:hover {
+    color: rgb(208, 205, 205);
+}
+
+footer .socmed p {
+    font-size: 25px;
+    color: var(--white);
+    text-align: center;
+    margin-left: 2.0rem;
+}
+
+.socmed {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    
+}
+
+footer .copyright p {
+    font-size: 15px;
+    color: var(--white);
+
+    font-family: 'Jost', sans-serif;
+
+}
+
+footer .copyright a> p {
+    font-size: 15px;
+    color: var(--gold);
+    text-decoration: aqua;
+    font-family: 'Jost', sans-serif;
+    text-decoration: underline var(--gold) 1px;
+
+}
+
+
+
+
+
+
+
