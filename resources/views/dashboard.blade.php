@@ -252,30 +252,30 @@
                                 </div>
             @endif
             @if ($group->binusian == 1)
-                <div class="column" style="display: flex;">
-                    <div class="input">
-                        <label for="flazz" style="display: block;">Upload Flazz Card <span> ( pdf, jpg, jpeg and
-                                png )</span></label>
-                        <input type="file" name="flazz" value="{{ $member->flazz ?? old('flazz') }}"
-                            placeholder="Upload in pdf, jpg, jpeg and png" required
-                            accept="application/pdf, image/jpg, image/jpeg. image/png">
-                    </div>
-                </div>
-            @endif
-            <div class="margin-left-validation"></div>
-            @error('line')
-                <span class="margin-left-validation" role="alert">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
-            <div class="column" style="display: flex;">
+                {{-- <div class="column" style="display: flex;"> --}}
                 <div class="input">
-                    <label for="github" style="display: block;">Github/Gitlab ID</label>
-                    <input type="text"name="github" value="{{ old('github') }}"
-                        placeholder="Your Github/Gitlab ID" required>
+                    <label for="flazz" style="display: block;">Upload Flazz Card <span> ( pdf, jpg, jpeg and
+                            png )</span></label>
+                    <input type="file" name="flazz" value="{{ $member->flazz ?? old('flazz') }}"
+                        placeholder="Upload in pdf, jpg, jpeg and png" required
+                        accept="application/pdf, image/jpg, image/jpeg. image/png">
                 </div>
-
+        </div>
+        @endif
+        <div class="margin-left-validation"></div>
+        @error('line')
+            <span class="margin-left-validation" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+        @enderror
+        <div class="column" style="display: flex;">
+            <div class="input">
+                <label for="github" style="display: block;">Github/Gitlab ID</label>
+                <input type="text"name="github" value="{{ old('github') }}" placeholder="Your Github/Gitlab ID"
+                    required>
             </div>
+
+        </div>
         </div>
         <div id="submit" style="padding-top: 3.5rem;">
             <button type="submit" id="submit">Confirm and Submit</button>
