@@ -105,7 +105,28 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="socmed">
+            <div class="socmed-icon">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa fa-envelope"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <p>Social Media</p>
+        </div>
 
+        <div class="copyright">
+            <p>
+                Powered and Organized by Bina Nusantara Computer Club
+            </p>
+            <a href="">
+                <p>Privacy Policy and Terms of Service</p>
+            </a>
+        </div>
+
+    </footer>
     <script>
         const btn = document.getElementById('btn1');
 

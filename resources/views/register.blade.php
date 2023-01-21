@@ -138,7 +138,7 @@
 
                         <div id="file-input" style="display: none;">
                             <div class="input">
-                                <label for="flazz_upload">Upload Flazz Card (*Binusian only) <span> ( pdf, jpg, jpeg and png )</span></label>
+                                <label for="flazz_upload">Upload Flazz Card <span> ( pdf, jpg, jpeg and png )</span></label>
                                 <input type="file" name="flazz" id="flazz_upload" accept="application/pdf, image/jpg, image/jpeg. image/png">
                             </div>
                         </div>
@@ -152,7 +152,7 @@
                         
                         <div id="file-inputs" style="display: none;">
                             <div class="input">
-                                <label for="id">Upload ID card (*Non-Binusian only) <span> ( pdf, jpg, jpeg and png )</span></label>
+                                <label for="id">Upload ID card <span> ( pdf, jpg, jpeg and png )</span></label>
                                 <input type="file" name="ktp" id="ktp_upload" accept="application/pdf, image/jpg, image/jpeg. image/png">
                         </div>
                         </div>

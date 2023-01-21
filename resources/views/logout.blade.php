@@ -22,8 +22,29 @@
     <script src="js/flipdown/flipdown.js"></script>
 </head>
 <body>
-    @include('navbar')
-
+    
+    @if ($group->isAdmin==1)
+    <nav id="navbar">
+        <div class="container">
+            <img src="assets/logo.png" alt="">
+            <div class="nav-menu">
+                <ul>
+                    <a href="{{ route('adminDashboard') }}">
+                        <li style="color: var(--gold);">Dashboard</li>
+                    </a>
+                    <a href="{{ route('adminParticipant') }}">
+                        <li>Participant</li>
+                    </a>
+                </ul>
+            </div>
+            <a href="{{ route('logout') }}">
+                <p>Logout</p>
+            </a>
+        </div>
+    </nav>
+   
+    @else($group->isAdmin==0)  @include('navbar') @endif
+   
     <div id="container" style="display: flex; justify-content: left; padding-left: 100px;">
         <img src="Login Page/assets/logout.png" alt="">
         <div class="title" style=" padding-left: 5px;">
@@ -63,5 +84,6 @@
         </div>
         
     </footer>
+
 </body>
 </html>
